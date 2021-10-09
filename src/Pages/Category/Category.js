@@ -7,7 +7,7 @@ import {styles} from './category.style';
 
 const Category = () => {
   const ALL_CATEGORY_API_URL =
-    'https://www.themealdb.com/api/json/v1/1/list.php?c=list';
+    'https://www.themealdb.com/api/json/v1/1/categories.php';
   //fetch hook u çğırıldı
   const {data} = useFetchCategory(ALL_CATEGORY_API_URL);
   console.log(data);
@@ -15,7 +15,7 @@ const Category = () => {
 
   return (
     <View style={styles.container}>
-      <FlatList data={data.meals} renderItem={renderCategory} />
+      <FlatList data={data.categories} renderItem={renderCategory} />
     </View>
   );
 };

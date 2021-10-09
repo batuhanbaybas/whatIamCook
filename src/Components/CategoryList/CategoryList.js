@@ -1,11 +1,18 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Image} from 'react-native';
+
 import {styles} from './categoryList.style';
 
 const CategoryList = ({category}) => {
   return (
     <View style={styles.container}>
-      <Text>{category.strCategory}</Text>
+      <Image
+        style={styles.image}
+        source={{
+          uri: category.strCategoryThumb,
+        }}
+      />
+      <Text style={styles.title}>{category.strCategory}</Text>
     </View>
   );
 };
