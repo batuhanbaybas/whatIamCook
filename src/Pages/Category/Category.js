@@ -9,7 +9,7 @@ const Category = () => {
   const ALL_CATEGORY_API_URL =
     'https://www.themealdb.com/api/json/v1/1/list.php?c=list';
   //fetch hook u çğırıldı
-  const {loading, error, data} = useFetchCategory(ALL_CATEGORY_API_URL);
+  const {data} = useFetchCategory(ALL_CATEGORY_API_URL);
   console.log(data);
   const renderCategory = ({item}) => <CategoryList category={item} />;
 

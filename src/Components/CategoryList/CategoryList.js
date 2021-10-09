@@ -2,12 +2,12 @@ import React from 'react';
 import {View, Text} from 'react-native';
 import {styles} from './categoryList.style';
 
-const CategoryList = ({item}) => {
-  console.log(`katogori: ${item}`);
+const CategoryList = ({category}) => {
+  console.log(`katogori: ${category}`);
   console.log('bişiler');
   return (
     <View style={styles.container}>
-      <Text>{item.srtCategory}</Text>
+      <Text>{category.srtCategory}</Text>
     </View>
   );
 };
