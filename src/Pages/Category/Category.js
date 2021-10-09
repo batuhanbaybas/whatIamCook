@@ -1,18 +1,20 @@
 import React from 'react';
 import {View, FlatList} from 'react-native';
-import Config from 'react-native-config';
+// import Config from 'react-native-config';
 import CategoryList from '../../Components/CategoryList/CategoryList';
 import useFetchCategory from '../../Hooks/FetchCategory/useFetchCategory';
+import {styles} from './category.style';
 
 const Category = () => {
-  const {loading, error, data} = useFetchCategory(Config.ALL_CATEGORY_API_URL);
+  const ALL_CATEGORY_API_URL =
+    'https://www.themealdb.com/api/json/v1/1/list.php?c=list';
+  //fetch hook u çğırıldı
+  const {loading, error, data} = useFetchCategory(ALL_CATEGORY_API_URL);
   console.log(data);
-  const renderCategory = ({item}) => {
-    return <CategoryList category={item} />;
-  };
+  const renderCategory = ({item}) => <CategoryList category={item} />;
 
   return (
-    <View>
+    <View style={styles.container}>
       <FlatList data={data} renderItem={renderCategory} />
     </View>
   );
