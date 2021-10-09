@@ -7,7 +7,7 @@ const CategoryList = ({category}) => {
   console.log('bişiler');
   return (
     <View style={styles.container}>
-      <Text>{category.srtCategory}</Text>
+      <Text>{category.strCategory}</Text>
     </View>
   );
 };

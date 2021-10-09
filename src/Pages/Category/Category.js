@@ -15,7 +15,7 @@ const Category = () => {
 
   return (
     <View style={styles.container}>
-      <FlatList data={data} renderItem={renderCategory} />
+      <FlatList data={data.meals} renderItem={renderCategory} />
     </View>
   );
 };
