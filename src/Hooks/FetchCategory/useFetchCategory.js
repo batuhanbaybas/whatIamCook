@@ -6,6 +6,7 @@ const useFetchCategory = url => {
   const [error, setError] = useState(null);
   const [data, setData] = useState([]);
 
+  //API den veri çekme işlemi
   const fetchData = async () => {
     try {
       const {data: responseData} = await axios.get(url);
@@ -20,7 +21,7 @@ const useFetchCategory = url => {
     fetchData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
+  //data = API dan gelen veriler
   return {loading, error, data};
 };
 

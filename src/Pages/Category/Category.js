@@ -8,7 +8,7 @@ import {styles} from './category.style';
 const Category = () => {
   //fetch custom hook u çağırıldı
   const {data} = useFetchCategory(ALL_CATEGORY_API_URL);
-  console.log(data);
+  //kategorileri listeleme
   const renderCategory = ({item}) => <CategoryList category={item} />;
 
   return (

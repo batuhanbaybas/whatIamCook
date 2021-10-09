@@ -2,10 +2,13 @@ import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
-    padding: 15,
+    margin: 5,
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
+    backgroundColor: 'white',
+    borderTopLeftRadius: 50,
+    borderBottomLeftRadius: 50,
   },
   image: {
     width: 100,
@@ -13,7 +16,8 @@ export const styles = StyleSheet.create({
     borderRadius: 50,
   },
   title: {
-    fontSize: 20,
-    marginLeft: 10,
+    fontSize: 25,
+    fontWeight: 'bold',
+    marginLeft: 30,
   },
 });
