@@ -1,13 +1,13 @@
 import React from 'react';
 import {View, FlatList} from 'react-native';
-import Config from 'react-native-config';
+import {ALL_CATEGORY_API_URL} from '../../API/common';
 import CategoryList from '../../Components/CategoryList/CategoryList';
 import useFetchCategory from '../../Hooks/FetchCategory/useFetchCategory';
 import {styles} from './category.style';
 
 const Category = () => {
   //fetch custom hook u çağırıldı
-  const {data} = useFetchCategory(Config.ALL_CATEGORY_API_URL);
+  const {data} = useFetchCategory(ALL_CATEGORY_API_URL);
   console.log(data);
   const renderCategory = ({item}) => <CategoryList category={item} />;
 
