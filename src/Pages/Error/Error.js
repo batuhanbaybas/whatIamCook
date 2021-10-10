@@ -1,12 +1,8 @@
+import AnimatedLottieView from 'lottie-react-native';
 import React from 'react';
-import {View, Text} from 'react-native';
 
 const Error = () => {
-  return (
-    <View>
-      <Text></Text>
-    </View>
-  );
+  return <AnimatedLottieView source={require('../../Assets/error.json')} />;
 };
 
 export default Error;

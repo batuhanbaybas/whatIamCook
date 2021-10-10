@@ -14,7 +14,6 @@ const useFetchCategory = url => {
       setLoading(false);
     } catch (err) {
       setError(err.message);
-      console.log(error);
     }
   };
   useEffect(() => {
