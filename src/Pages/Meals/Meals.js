@@ -6,7 +6,9 @@ import useFetchCategory from '../../Hooks/FetchCategory/useFetchCategory';
 import {styles} from './meals.style';
 
 const Meals = ({navigation, route}) => {
+  //parametre çapırıldı
   const {strCategory} = route.params;
+  //API a istek atıldı
   const {data} = useFetchCategory(`${FILTER_BY_CATEGORY_URL}${strCategory}`);
   const handleMealSelect = idMeal => {
     navigation.navigate('Detail', {idMeal});

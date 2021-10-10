@@ -1,12 +1,13 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-const Detailist = detail => {
+const DetaiList = mealDetail => {
+  console.log(mealDetail);
   return (
     <View>
-      <Text>{detail.strMeal}</Text>
+      <Text>{mealDetail.strInstructions}</Text>
     </View>
   );
 };
 
-export default Detailist;
+export default DetaiList;
