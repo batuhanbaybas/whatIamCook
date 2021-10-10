@@ -3,8 +3,9 @@ import {View, FlatList} from 'react-native';
 import {LOOK_FULL_MEAL_DETAIL} from '../../API/common';
 import useFetchCategory from '../../Hooks/FetchCategory/useFetchCategory';
 import DetailList from '../../Components/DetailList/DetailList';
+import {styles} from './detail.style';
 
-const Detail = ({navigation, route}) => {
+const Detail = ({route}) => {
   //parametre çağırıldı
   const {idMeal} = route.params;
   //api ye istek atıldı
@@ -12,7 +13,7 @@ const Detail = ({navigation, route}) => {
 
   const renderFoodDetail = ({item}) => <DetailList mealDetail={item} />;
   return (
-    <View>
+    <View style={styles.container}>
       <FlatList data={data.meals} renderItem={renderFoodDetail} />
     </View>
   );
