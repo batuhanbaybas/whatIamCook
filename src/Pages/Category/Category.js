@@ -5,11 +5,21 @@ import CategoryList from '../../Components/CategoryList/CategoryList';
 import useFetchCategory from '../../Hooks/FetchCategory/useFetchCategory';
 import {styles} from './category.style';
 
-const Category = () => {
+const Category = ({navigation}) => {
   //fetch custom hook u çağırıldı
   const {data} = useFetchCategory(ALL_CATEGORY_API_URL);
+  //handle navigation
+  const handleCategorySelect = strCategory => {
+    navigation.navigate('Meals', {strCategory});
+  };
+
   //kategorileri listeleme
-  const renderCategory = ({item}) => <CategoryList category={item} />;
+  const renderCategory = ({item}) => (
+    <CategoryList
+      onSelect={() => handleCategorySelect(item.strCategory)}
+      category={item}
+    />
+  );
 
   return (
     <View style={styles.container}>

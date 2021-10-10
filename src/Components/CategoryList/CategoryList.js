@@ -1,19 +1,21 @@
 import React from 'react';
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, TouchableWithoutFeedback} from 'react-native';
 
 import {styles} from './categoryList.style';
 
-const CategoryList = ({category}) => {
+const CategoryList = ({category, onSelect}) => {
   return (
-    <View style={styles.container}>
-      <Image
-        style={styles.image}
-        source={{
-          uri: category.strCategoryThumb,
-        }}
-      />
-      <Text style={styles.title}>{category.strCategory}</Text>
-    </View>
+    <TouchableWithoutFeedback onPress={onSelect}>
+      <View style={styles.container}>
+        <Image
+          style={styles.image}
+          source={{
+            uri: category.strCategoryThumb,
+          }}
+        />
+        <Text style={styles.title}>{category.strCategory}</Text>
+      </View>
+    </TouchableWithoutFeedback>
   );
 };
 
