@@ -17,3 +17,9 @@ Proje API dan gelen tarif verilerini kullanıcının seçimlerine göre görsell
 ###### Proje Görselleri
 
 ![Category Page](https://github.com/batuhanbaybas/whatIamCook/blob/master/src/ReadmeAssets/Category.png)
+
+![Meals Page](https://github.com/batuhanbaybas/whatIamCook/blob/master/src/ReadmeAssets/Meals.png)
+
+![Detail_1 Page](https://github.com/batuhanbaybas/whatIamCook/blob/master/src/ReadmeAssets/Detail_1.png)
+
+![Meals Page](https://github.com/batuhanbaybas/whatIamCook/blob/master/src/ReadmeAssets/Detail_2.png)
