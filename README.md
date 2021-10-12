@@ -16,4 +16,4 @@ Proje API dan gelen tarif verilerini kullanıcının seçimlerine göre görsell
 
 ###### Proje Görselleri
 
-![Tux, Category Page](/src/ReadmeAssets/Category.png)
+![Tux, Category Page](../..//src/ReadmeAssets/Category.png)
