@@ -22,4 +22,4 @@ Proje API dan gelen tarif verilerini kullanıcının seçimlerine göre görsell
 
 ![Detail_1 Page](https://github.com/batuhanbaybas/whatIamCook/blob/master/src/ReadmeAssets/Detail_1.png)
 
-![Meals Page](https://github.com/batuhanbaybas/whatIamCook/blob/master/src/ReadmeAssets/Detail_2.png)
+![Detail_2 Page](https://github.com/batuhanbaybas/whatIamCook/blob/master/src/ReadmeAssets/Detail_2.png)
