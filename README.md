@@ -16,4 +16,4 @@ Proje ApI dan gelen verileri kullanıcının seçimlerine göre görselleştirme
 
 ###### Proje Görselleri
 
-![Tux, Category PAge](../src/ReadmeAssets/Category.png)
+![Tux, Category PAge](/src/ReadmeAssets/Category.png)
