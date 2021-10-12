@@ -46,6 +46,7 @@ export const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: 'red',
+
     height: 50,
     marginVertical: 20,
     justifyContent: 'center',

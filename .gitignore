@@ -63,3 +63,6 @@ buck-out/
 
 # API
 /src/API
+
+# Assets
+/src/ReadmeAssets
